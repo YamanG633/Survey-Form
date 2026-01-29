@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <style type="text/css">
+        body {
+            background-color: lightgreen;
+            font-family: Verdana;
+        }
+
+        form {
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 450px;
+            background-color: white;
+        }
+
+        .form-control {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            display: block;
+            padding: 10px;
+            width: 90%;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: lightgreen;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Survey Form</h1>
+
+    <form>
+        <fieldset>
+            <div class="form-control">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-control">
+                <label>Age</label>
+                <input type="number" name="age" placeholder="Enter your age">
+            </div>
+
+            <div class="form-control">
+                <label>Which option best describes you?</label>
+                <select name="role">
+                    <option>Student</option>
+                    <option>Intern</option>
+                    <option>Professional</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label>Would you recommend me to a friend?</label>
+                <input type="radio" name="recommend" value="Yes"> Yes
+                <input type="radio" name="recommend" value="No"> No
+                <input type="radio" name="recommend" value="Maybe"> Maybe
+            </div>
+
+            <div class="form-control">
+                <label>Languages and Frameworks known</label>
+                <input type="checkbox" name="lang" value="C"> C
+                <input type="checkbox" name="lang" value="C++"> C++
+                <input type="checkbox" name="lang" value="Java"> Java
+                <input type="checkbox" name="lang" value="Python"> Python
+            </div>
+
+            <div class="form-control">
+                <label>Any Comments or Suggestions</label>
+                <textarea placeholder="Enter your comment here"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
